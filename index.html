@@ -1,12 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gad105 | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+
+        /* En-tête */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Projets */
+        .projet {
+            background: #f9f9f9;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .projet h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Compétences */
+        .competences {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h2>Je suis Gaddielle</h2>
-    <h1>Bonjour, c'est mon portfolio !</h1>
-    <p>Je construis mon site petit à petit.</p>
-    <p>J'apprends à coder</p>
+
+<header>
+    <div class="container">
+        <h1>✨ Bonjour, je suis Gad105 ✨</h1>
+        <p>En apprentissage | Créative | Passionnée de code</p>
+    </div>
+</header>
+
+<div class="container">
+    
+    <!-- À propos -->
+    <section>
+        <h2>📖 À propos de moi</h2>
+        <p>Je découvre le développement web et je construis mon portfolio petit à petit. J'apprends à coder sur GitHub et j'adore créer des projets visuels et utiles !</p>
+    </section>
+
+    <!-- Projets -->
+    <section>
+        <h2>🚀 Mes projets</h2>
+        
+        <div class="projet">
+            <h3>📁 Mon premier portfolio</h3>
+            <p>Ce site que vous êtes en train de voir ! Je l'ai construit avec HTML et CSS pour présenter mon travail.</p>
+        </div>
+
+        <div class="projet">
+            <h3>🔧 Projet en cours</h3>
+            <p>Je prépare un nouveau projet sympa. Restez connectés !</p>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section>
+        <h2>🎯 Ce que j'apprends</h2>
+        <div class="competences">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Python</span>
+            <span class="tag"> Langage R</span>
+            <span class="tag">Java</span>
+        </div>
+    </section>
+
+    <!-- Objectifs -->
+    <section>
+        <h2>🌟 Mes objectifs 2026</h2>
+        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+            <li>✓ Créer mon portfolio GitHub</li>
+            <li>⋆ Apprendre les bases de la programmation</li>
+            <li>⋆ Construire 3 petits projets concrets</li>
+            <li>⋆ Partager mon travail et progresser chaque jour</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>💌 Me contacter</h2>
+        <p>Vous pouvez me trouver sur GitHub :</p>
+        <a href="https://github.com/Gad105" class="btn" target="_blank">📂 Voir mon GitHub</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>Gad105 - Portfolio construit  sur GitHub Pages</p>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem;">Mise à jour : 2026</p>
+</footer>
+
 </body>
 </html>
